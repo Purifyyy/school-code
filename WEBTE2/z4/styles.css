@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.modal-content {
+    background-color: black;
+    border: 1px solid white;
+}
+
+h2, h1 {
+    text-align: center;
+}
+
+hr {
+    opacity: 1;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#selectLabel {
+    margin-top: 0.8vh;
+    text-align: right;
+}

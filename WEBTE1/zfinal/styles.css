@@ -1,0 +1,160 @@
+.row {
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#containerHead {
+    text-align: center;
+}
+
+body {
+    background-image: url("back.png");
+}
+
+.container {
+    background-color: white;
+    width: 25%;
+    min-width: 350px;
+    border: 10px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 2vh;
+}
+
+#equations {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#modalWindow, #hintWindow {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#modalBody, #helpH, #hintH {
+    background-color: #888fcb;
+    color: white;
+    text-align: center;
+}
+
+#hintBody {
+    background-color: white;
+}
+
+#nextTask {
+    background-color: #888fcb;
+    border: 3px solid white;
+    color: white;
+    font-weight: bolder;
+    font-size: 120%;
+    margin: auto;
+}
+
+#modalTxt, #hintTxt, #helpTxt {
+    text-align: center;
+    font-size: calc(1.3rem + .6vw) !important;
+}
+
+#assignment {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+#backOf {
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 0.5rem;
+    color: black;
+    width: 55%;
+    min-width: 350px;
+    margin-bottom: 5vh;
+}
+
+#helper {
+    min-width: 240px;
+}
+
+#help, #hintTip {
+    background-color: #888fcb;
+    border: 10px solid white;
+    outline: 5px solid black;
+    color: black;
+    font-weight: bolder;
+    font-size: 140%;
+    margin-bottom: 5vh;
+    width: 272px;
+}
+
+#headerImg {
+    width: 20%;
+    height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: 0 !important;
+}
+
+.fs-3, #headerImg {
+    text-align: center !important;
+    margin: auto;
+    color: white;
+    font-size: 2rem!important;
+    font-weight: bold;
+}
+
+.fs-3 {
+    margin-left: 2rem !important;
+}
+
+p {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#headContent {
+    margin: auto;
+    text-align: center;
+}
+
+.d-flex {
+    background-color: #888fcb;
+}
+
+.p-3 {
+    padding: 0 !important;
+    border-bottom: 10px solid black;
+}
+
+.endDiv, .startDiv {
+    text-align: center;
+}
+
+@media (min-width: 609px) {
+    .endDiv {
+        text-align: right !important;
+    }
+    .startDiv {
+        text-align: left !important;
+    }
+}
+
+@media print {
+    #headerImg, .container {
+        display: none;
+    }
+    #backOf {
+        width: 100%;
+    }
+    #help, #hintTip {
+        background-color: white;
+    }
+    header {
+        margin-bottom: 1vh;
+    }
+}
+ 
+

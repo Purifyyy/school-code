@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 130%;
+}
+
+.modal-content {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.container {
+    text-align: center;
+    margin-top: 8vh !important;
+}
+
+.row {
+    margin-bottom: 8vh;
+}
+
+label {
+    text-align: right !important;
+}

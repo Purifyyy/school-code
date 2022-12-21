@@ -1,0 +1,78 @@
+#weatherWidget {
+    visibility: hidden;
+}
+
+.input-group {
+    width: 50%;
+    margin: 3vh auto 0;
+}
+
+body {
+    background-color: black;
+    color: white !important;
+}
+
+.modal-content {
+    background-color: black;
+    color: white !important;
+    border: 1px solid white;
+}
+
+#info {
+    color: white;
+}
+
+.row {
+    margin-bottom: 2vh;
+}
+
+#weatherWidget {
+    margin: 0 auto;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flagTable, #timeTable {
+    width: 50%;
+    background-color: ghostwhite;
+    text-align: center;
+    margin-top: 2vh;
+    vertical-align: top !important;
+}
+
+.flagImage {
+    width: 40%;
+    height: 40%;
+    border: 1px double black;
+    margin: 0 auto;
+    min-width: 47px!important;
+    min-height: 31px!important;
+}
+
+td {
+    vertical-align: middle !important;
+    font-size: 130%;
+}
+
+th {
+    font-size: 150%;
+}
+
+#countryTable {
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+p {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#map {
+    width: 80%;
+    height: 750px;
+}

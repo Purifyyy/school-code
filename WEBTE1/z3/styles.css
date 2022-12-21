@@ -1,0 +1,196 @@
+body {
+    background-image: url("banner2.jpg");
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255, 0.85);
+    width: 70%;
+    min-width: 350px;
+    height: 100%;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    display: inline-block;
+    min-width: 350px;
+    width: 70%;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid: auto / auto;
+}
+
+.row2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.row3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 3vh;
+}
+
+h1 {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    margin: 0;
+    font-size: 290%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-bottom: 6vh;
+    width: 70%;
+}
+
+h2 {
+    padding-bottom: 6vh;
+    margin: 0;
+    font-size: 210%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    padding-bottom: 6vh;
+    margin: 0;
+    font-size: 170%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: left !important;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="tel"], select {
+    width: 80%;
+    padding: 0.5vw;
+    border-color: black;
+}
+
+.row2 select, .row select {
+    margin-bottom: 5vh;
+}
+
+p {
+    margin-bottom: 5vh;
+    margin-top: 0;
+    margin-left: 4.5vw;
+    text-align: left !important;
+    visibility: hidden;
+    opacity: 80%;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+}
+
+.txta {
+    display: none;   
+}
+
+.txta textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3vh;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+#send_form {
+    margin-bottom: 5vh;
+}
+
+#address_form {
+    display: none;
+    margin-bottom: 3vh;
+}
+
+input[type=submit] {
+    border: 0.3rem outset white;
+    border-radius: 12px;
+    padding: 16px 64px;
+    cursor: pointer;
+    font: bold 1rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3vh;
+}
+
+#necessity {
+    visibility: visible !important;
+    color: black;
+    opacity: 70%;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+    form {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    form {
+        width: 720px;
+    }
+    .row {
+        grid: auto / auto auto;
+    }
+    .row2 {
+        grid-template-columns: auto auto auto;
+    }
+    .row3 {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    form {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    form {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1400px;
+    }
+    form {
+        width: 1400px;
+    }
+}
+
+@media (min-width: 1930px) {
+    .container {
+        width: 1820px;
+    }
+    form {
+        width: 1820px;
+    }
+}

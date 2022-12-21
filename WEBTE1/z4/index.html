@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generate table</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="content">
+            <div id="xf">
+                <label for="xfield">Hodnota X </label>
+                <input type="text" id="xfield" onchange="validate_input1()">
+                <br><p id="s1">Neplatný vstup (len čísla 1-9)</p><br>
+            </div>
+            <div id="yf">
+                <label for="yfield">Hodnota Y </label>
+                <input type="text" id="yfield" onchange="validate_input2()">
+                <br><p id="s2">Neplatný vstup (len čísla 1-9)</p><br><br>
+            </div>
+            <div id="bttn">
+                <input id="openbutton" type="button" value="Generuj" onclick="generate_if()">
+            </div>
+        </div>
+        <div id="popup">
+            <div class="popup-content">
+                <table id="tbl"></table>
+                <div id="cbttn">
+                    <input id="closebtn" type="button" value="Zavrieť" onclick="remove_table()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon">
+    <title>Fotogaléria</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <h4>Fotogaléria</h4>
+                <input type="text" id="filter">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        
+        
+        <div id="photos" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4" ondragend="ordr()"></div>
+        
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" id="xx">
+                <div class="modal-content" id="x">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="modalButtonClose"></button>
+                    </div>  
+                    <div class="modal-body" id="modalBody">
+                        <div class="container-fluid">
+                            <div class="row" id=modalImg></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="slideshow-start">►</button>
+                        <button type="button" class="btn btn-secondary" id="previous">←</button>
+                        <button type="button" class="btn btn-secondary" id="next">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

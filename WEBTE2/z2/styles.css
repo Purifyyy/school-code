@@ -1,0 +1,75 @@
+body {
+    background-color: black !important;
+    color: white !important;
+}
+
+.h1, .h3 {
+    text-align: center;
+    margin-bottom: 3vh !important;
+}
+
+#result-table, form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallerForm {
+    width: 35% !important;
+}
+
+table {
+    width: 50% !important;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: white !important;
+    text-align: center;
+}
+
+th {
+    background-color: #343a40;
+}
+
+.table .thead-dark th {
+    border-color: white !important;
+    border-bottom: none !important;
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: grey !important;
+    border-color: grey !important;
+}
+
+.modal-content {
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+
+#ex_tr_term, #ex_term, #ex_tr_term_t {
+    font-weight: bold !important;
+}
+
+#mdlbtn {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+span, .centeredLabel {
+    display: table;
+    margin: 0 auto;
+}
+
+.centerDiv {
+    text-align: center;
+}
+
+.crBtn {
+    width: 7vw !important;
+    min-width: 95px !important;
+}
+
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon">
+    <title>Formulár negativity pri návšteve Slovenskej republiky</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://iolab.sk/form2mail/form2mail.php" method="post" enctype="multipart/form-data"
+        onsubmit="return chceck_sub()"> 
+            <h1>Formulár osvedčenia negativity pred návštevou Slovenskej republiky</h1>
+            <hr>
+            <input type="hidden" name="Tomáš Baďura">
+            <input type="hidden" name="apikey" value="...">
+            <input type="hidden" name="from" value="...">
+            <input type="hidden" name="to" value="...">
+            <input type="hidden" name="subject" value="Formulár - Covid">
+            <input type="hidden" name="redirectOk" value="https://webte1.fei.stuba.sk/~xbadurat/supersecretassignment_z3/success.html">
+            <input type="hidden" name="redirectFalse" value>
+            <h2>Základné údaje</h2>
+            <div class="row">
+                <div>
+                    <label for="name">Meno*</label><br>
+                    <input type="text" id="name" name="Meno" placeholder="Krstné meno" required onchange="check_name();"
+                    oninvalid="this.setCustomValidity('Toto poľe je povinné')" oninput="this.setCustomValidity('')"><br>
+                    <p id="pname">Formát: Abcdefgh</p>
+                    <label for="bday">Dátum narodenia*</label><br>
+                    <input type="date" id="bday" name="Dátum narodenia" onchange="age_difference();" required
+                    oninvalid="this.setCustomValidity('Toto poľe je povinné')" oninput="this.setCustomValidity('')"><br><p id="pbday"></p>
+                    <label for="num">Telefónne číslo</label><br>
+                    <input type="tel" id="num" name="Telefónne číslo" onchange="check_telnum();" placeholder="0905628331"
+                    pattern="09[0-9]{8}"><br>
+                    <p id="pnum">Formát: 09xxxxxxxx</p>
+                </div>
+                <div>
+                    <label for="sname">Priezvisko*</label><br>
+                    <input type="text" id="sname" name="Priezvisko" placeholder="Priezvisko" required onchange="check_sname()"
+                    oninvalid="this.setCustomValidity('Toto poľe je povinné')" oninput="this.setCustomValidity('')"><br>
+                    <p id="psname">Formát: Hijklmnop</p>
+                    <label for="age">Vek*</label><br>
+                    <input type="text" id="age" name="Vek" onchange="age_difference();" placeholder="30" required
+                    oninvalid="this.setCustomValidity('Toto poľe je povinné')" oninput="this.setCustomValidity('')"><br><p id="page"></p>
+                    <label for="mail">Email</label><br>
+                    <input type="email" id="mail" name="Email" onchange="check_mail();" placeholder="jane.doe@gmail.com"
+                    pattern="^.{3,}@.{1,}(([.]{1}.{0,}){0,})[.]{1}.{2,4}$"><br>
+                    <p id="pmail">Formát: xxx@xxxxx.xx</p>
+                </div>
+            </div>
+            <p id="necessity">* - povinné</p>
+            <h2>Preukázie negativity</h2>
+            <div class="row2">
+                <div>
+                    <label for="sel1" id="first_sel">Forma</label><br>
+                    <select id="sel1" name="Forma" onchange="select_changer1();">
+                        <option value="Vakcína">Vakcína</option>
+                        <option value="Test">Test</option>
+                        <option value="Prekonanie ochorenia">Prekonanie ochorenia</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="ftype">Typ vakcíny</label><br>
+                    <select id="sel2" name="Typ vakcíny" onchange="select_changer2();">
+                        <option value="Na báze proteínu">Na báze proteínu</option>
+                        <option value="Adenovírus">Adenovírus</option>
+                        <option value="mRNA">mRNA</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="fopt">Spoločnosť</label><br>
+                    <select id="sel3" name="Spoločnosť">
+                        <option value="FBRI SRC VB VECTOR">FBRI SRC VB VECTOR</option>
+                        <option value="Sanofi-GSK">Sanofi-GSK</option>
+                        <option value="Novavax">Novavax</option>
+                    </select>
+                </div>
+            </div>
+            <h3>Akým dopravným prostriedkom budete prekračovať hranice Slovenskej republiky</h3>
+            <div class="row3">
+                <div>
+                    <input type="radio" id="car" name="Transport" value="Auto" onchange="define_transport();" checked>
+                    <label for="car">Auto</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="bus" name="Transport" value="Autobus" onchange="define_transport();">
+                    <label for="bus">Autobus</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="plane" name="Transport" value="Lietadlo" onchange="define_transport();">
+                    <label for="plane">Lietadlo</label>
+                </div>
+                <div>
+                    <input type="radio" id="other" name="Transport" value="Iné" onchange="define_transport();">
+                    <label for="other">Iné</label>
+                </div>
+            </div>
+            <div class="txta" id="txta">
+                <textarea id="vehicledef" rows="8" placeholder="Uveďte iný dopravný prostriedok"></textarea>
+            </div>
+            <h3>Kam chcete aby bolo osvedčenie odoslané</h3>
+            <div class="row2" id="send_form">
+                <div>
+                    <input type="checkbox" id="vianum" name="Na telefónne číslo" onchange="address_form()">
+                    <label for="vianum">Na telefónne číslo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="viamail" name="Na e-mail" onchange="address_form()" checked>
+                    <label for="viamail">Na e-mail</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="viapost" name="Na adresu v rámci EÚ" onchange="address_form()">
+                    <label for="viapost">Na adresu v rámci EÚ</label>
+                </div>
+            </div>
+            <div class="row2" id="address_form">
+                <div>
+                    <label for="name">Krajina</label><br>
+                    <input type="text" id="country" placeholder="Česká republika">
+                </div>
+                <div>
+                    <label for="name">Mesto</label><br>
+                    <input type="text" id="city" placeholder="Praha">
+                </div>
+                <div>
+                    <label for="name">Adresa</label><br>
+                    <input type="text" id="address" placeholder="Nesvadbova 16">
+                </div>
+            </div>
+            <input type="submit" value="Odošli" id="send_button">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

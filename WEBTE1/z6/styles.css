@@ -1,0 +1,31 @@
+#result {
+    display: none;
+}
+
+body {
+    background-color: #000000;
+}
+
+.col {
+    color: white;
+    font-family: 'Constantia';
+    font-size: 120%;
+    text-align: center;
+}
+
+.row:first-child {
+    margin-bottom: 17vh;
+    text-align: center;
+}
+
+#upper1, #upper2 {
+    margin-bottom: 5vh;
+    font-size: 140%;
+}
+
+#finish {
+    background-color: black;
+    color: white;
+    border-color: black;
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255);
+}

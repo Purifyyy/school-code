@@ -1,0 +1,21 @@
+.row {
+    margin-bottom: 25vh!important;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 120%;
+    align-items: center;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.modal-content {
+    background-color: black!important;
+    border: 2px solid white;
+}
+
+#resultModalBodyPre {
+    color: white;
+}

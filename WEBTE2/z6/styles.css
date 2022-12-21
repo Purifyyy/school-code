@@ -1,0 +1,16 @@
+.modal-content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+.btn-warning {
+    background-color: yellow;
+    border-color: yellow;
+}

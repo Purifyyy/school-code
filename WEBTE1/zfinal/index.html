@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+        }
+    </script>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#888fcb">
+    <meta name="msapplication-TileColor" content="#888fcb">
+    <title>Webtematika</title>
+    <meta name="theme-color" content="#888fcb" />
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="containerHead">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="d-flex align-items-center justify-content-center" id="headContent">
+                    <img src="logo.png" alt="logo" id="headerImg">
+                    <div class="text-center">
+                        <p class="fs-3">Webtematika</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="row" id="backOf">
+        <div class="col">
+            <h4 id="assignment">
+                Táto logická hra je postavená na funkcií drag and drop, vašou úlohou je zoradiť matematické výrazy na základe ich hodnoty <strong>vzostupne</strong>.<br><br>
+                Teda výraz s <strong>najnižšou</strong> výslednou hodnotou bude <strong>navrchu</strong>, a naopak výraz s <strong>najvyššou</strong> hodnotou zase <strong>naspodku</strong>. 
+                Aby ste si hru vedeli naplno užiť, predpokladá sa že máte znalosti z matematiky základnej a strednej školy, a ovládate jednoduché vzorce, funkcie, a metódy matematickej analýzy.<br>
+                Hra má 10 levelov, t.j. 10 skupín výrazov, poradie levelov je <strong>náhodné</strong>. Dokončené levely sa <strong>neopakujú</strong> dokým ešte sú nejaké neodohrané. 
+            </h4>
+        </div>
+    </div>
+
+    <div class="row" id="helper">
+        <div class="col endDiv">
+            <button class="btn btn-primary" id="hintTip" data-bs-toggle="modal" data-bs-target="#hintTab">
+                Nápoveda
+            </button>
+        </div>
+        <div class="col startDiv">
+            <button class="btn btn-primary" id="help" data-bs-toggle="modal" data-bs-target="#helpTab">
+                Návod na riešenie
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="equations" class="d-grid gap-3"></div>
+        
+        <div class="modal fade" id="hintTab" tabindex="-1" aria-labelledby="TipLabel" aria-hidden="true">
+            <div class="modal-dialog" id="hintWindow">
+                <div class="modal-content">
+                    <div class="modal-header" id="hintH">
+                        <h4 class="modal-title" id="TipLabel">Nápoveda</h4>
+                        <button type="button" id="hintClose" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="hintBody">
+                        <div class="container-fluid" id="hintTxt">
+                            <h3>Všetky hodnoty výrazov sú prirodzené čísla v intervale &lt;0,81&gt;. Teda počítanie netreba prekomplikovať.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="helpTab" tabindex="-1" aria-labelledby="helpLabel" aria-hidden="true">
+            <div class="modal-dialog" id="helpWindow">
+                <div class="modal-content">
+                    <div class="modal-header" id="helpH">
+                        <h4 class="modal-title" id="helpLabel">Riešenie úlohy</h4>
+                        <button type="button" id="helpClose" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="helpBody">
+                        <div class="container-fluid" id="helpTxt">
+                            <div id="hintImg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg" id="modalWindow">
+                <div class="modal-content"> 
+                    <div class="modal-body" id="modalBody">
+                        <div class="container-fluid" id="modalTxt">
+                            <h3>Úloha vyriešená, pokračuj na daľšiu!</h3>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="modalF">
+                        <button type="button" class="btn btn-secondary" id="nextTask">Pokračovať</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

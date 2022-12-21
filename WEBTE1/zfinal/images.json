@@ -1,0 +1,342 @@
+{
+    "A": [
+        {
+            "filename": "./a/a0.png",
+            "result": 0
+        },
+        {
+            "filename": "./a/a1.png",
+            "result": 1
+        },
+        {
+            "filename": "./a/a2.png",
+            "result": 2
+        },
+        {
+            "filename": "./a/a6.png",
+            "result": 6
+        },
+        {
+            "filename": "./a/a7.png",
+            "result": 7
+        },
+        {
+            "filename": "./a/a9.png",
+            "result": 9
+        },
+        {
+            "filename": "./a/a10.png",
+            "result": 10
+        },
+        {
+            "filename": "./a/a12.png",
+            "result": 12
+        }
+    ],
+    "B": [
+        {
+            "filename": "./b/b1.png",
+            "result": 1
+        },
+        {
+            "filename": "./b/b4.png",
+            "result": 4
+        },
+        {
+            "filename": "./b/b9.png",
+            "result": 9
+        },
+        {
+            "filename": "./b/b11.png",
+            "result": 11
+        },
+        {
+            "filename": "./b/b12.png",
+            "result": 12
+        },
+        {
+            "filename": "./b/b16.png",
+            "result": 16
+        },
+        {
+            "filename": "./b/b40.png",
+            "result": 40
+        },
+        {
+            "filename": "./b/b52.png",
+            "result": 52
+        }
+    ],
+    "C": [
+        {
+            "filename": "./c/c0.png",
+            "result": 0
+        },
+        {
+            "filename": "./c/c1.png",
+            "result": 1
+        },
+        {
+            "filename": "./c/c4.png",
+            "result": 4
+        },
+        {
+            "filename": "./c/c24.png",
+            "result": 24
+        },
+        {
+            "filename": "./c/c30.png",
+            "result": 30
+        },
+        {
+            "filename": "./c/c55.png",
+            "result": 55
+        },
+        {
+            "filename": "./c/c80.png",
+            "result": 80
+        },
+        {
+            "filename": "./c/c81.png",
+            "result": 81
+        }
+    ],
+    "D": [
+        {
+            "filename": "./d/d0.png",
+            "result": 0
+        },
+        {
+            "filename": "./d/d4.png",
+            "result": 4
+        },
+        {
+            "filename": "./d/d8.png",
+            "result": 8
+        },
+        {
+            "filename": "./d/d20.png",
+            "result": 20
+        },
+        {
+            "filename": "./d/d21.png",
+            "result": 21
+        },
+        {
+            "filename": "./d/d22.png",
+            "result": 22
+        },
+        {
+            "filename": "./d/d25.png",
+            "result": 25
+        },
+        {
+            "filename": "./d/d30.png",
+            "result": 30
+        }
+    ],
+    "E": [
+        {
+            "filename": "./e/e0.png",
+            "result": 0
+        },
+        {
+            "filename": "./e/e4.png",
+            "result": 4
+        },
+        {
+            "filename": "./e/e5.png",
+            "result": 5
+        },
+        {
+            "filename": "./e/e8.png",
+            "result": 8
+        },
+        {
+            "filename": "./e/e11.png",
+            "result": 11
+        },
+        {
+            "filename": "./e/e16.png",
+            "result": 16
+        },
+        {
+            "filename": "./e/e17.png",
+            "result": 17
+        },
+        {
+            "filename": "./e/e33.png",
+            "result": 33
+        }
+    ],
+    "F": [
+        {
+            "filename": "./f/f0.png",
+            "result": 0
+        },
+        {
+            "filename": "./f/f4.png",
+            "result": 4
+        },
+        {
+            "filename": "./f/f6.png",
+            "result": 6
+        },
+        {
+            "filename": "./f/f10.png",
+            "result": 10
+        },
+        {
+            "filename": "./f/f17.png",
+            "result": 17
+        },
+        {
+            "filename": "./f/f18.png",
+            "result": 18
+        },
+        {
+            "filename": "./f/f28.png",
+            "result": 28
+        },
+        {
+            "filename": "./f/f30.png",
+            "result": 30
+        }
+    ],
+    "G": [
+        {
+            "filename": "./g/g0.png",
+            "result": 0
+        },
+        {
+            "filename": "./g/g1.png",
+            "result": 1
+        },
+        {
+            "filename": "./g/g2.png",
+            "result": 2
+        },
+        {
+            "filename": "./g/g3.png",
+            "result": 3
+        },
+        {
+            "filename": "./g/g5.png",
+            "result": 5
+        },
+        {
+            "filename": "./g/g23.png",
+            "result": 23
+        },
+        {
+            "filename": "./g/g51.png",
+            "result": 51
+        },
+        {
+            "filename": "./g/g54.png",
+            "result": 54
+        }
+    ],
+    "H": [
+        {
+            "filename": "./h/h0.png",
+            "result": 0
+        },
+        {
+            "filename": "./h/h1.png",
+            "result": 1
+        },
+        {
+            "filename": "./h/h2.png",
+            "result": 2
+        },
+        {
+            "filename": "./h/h5.png",
+            "result": 5
+        },
+        {
+            "filename": "./h/h8.png",
+            "result": 8
+        },
+        {
+            "filename": "./h/h12.png",
+            "result": 12
+        },
+        {
+            "filename": "./h/h40.png",
+            "result": 40
+        },
+        {
+            "filename": "./h/h65.png",
+            "result": 65
+        }
+    ],
+    "I": [
+        {
+            "filename": "./i/i2.png",
+            "result": 2
+        },
+        {
+            "filename": "./i/i3.png",
+            "result": 3
+        },
+        {
+            "filename": "./i/i9.png",
+            "result": 9
+        },
+        {
+            "filename": "./i/i15.png",
+            "result": 15
+        },
+        {
+            "filename": "./i/i16.png",
+            "result": 16
+        },
+        {
+            "filename": "./i/i21.png",
+            "result": 21
+        },
+        {
+            "filename": "./i/i39.png",
+            "result": 39
+        },
+        {
+            "filename": "./i/i51.png",
+            "result": 51
+        }
+    ],
+    "J": [
+        {
+            "filename": "./j/j0.png",
+            "result": 0
+        },
+        {
+            "filename": "./j/j2.png",
+            "result": 2
+        },
+        {
+            "filename": "./j/j5.png",
+            "result": 5
+        },
+        {
+            "filename": "./j/j7.png",
+            "result": 7
+        },
+        {
+            "filename": "./j/j14.png",
+            "result": 14
+        },
+        {
+            "filename": "./j/j18.png",
+            "result": 18
+        },
+        {
+            "filename": "./j/j39.png",
+            "result": 39
+        },
+        {
+            "filename": "./j/j40.png",
+            "result": 40
+        }
+    ]
+}
